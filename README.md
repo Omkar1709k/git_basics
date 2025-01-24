@@ -11,37 +11,51 @@
 
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
+```
 ###
 # Check Configuration
 # View the current Git configuration for your system.
+```bash
 git config --list
+```
 ###
 # Initialize Repository
 # Create a new local Git repository in the current directory.
+```bash
 git init
+```
 ###
 # Clone Repository
 # Copy an existing remote repository to your local system.
+```bash
 git clone <repository-url>
+```
 ###
 # Check Status
 # Check the status of your working directory and see changes that haven't been staged or committed.
-git status
+```
+bash git status 
+```
 ###
 # Add Files to Staging Area
-# Stage specific or all files to prepare them for committing.
+# Stage specific or all files to prepare them for committing.  
+```bash
 git add <file>   # Add a specific file
 git add .        # Add all files in the current directory
+```
 ###
 # Commit Changes
 # Save the staged changes to the repository with a commit message.
+```bash
 git commit -m "Commit message"
+```
 ###
 # View Commit History
 # Display the history of commits in the current branch.
+```bash
 git log
+```
 ###
-
 
 # List Branches
 
@@ -50,32 +64,32 @@ git log
 # Create a new branch without switching to it.
 ```bash
 git branch <branch-name>
-```bash
+```
 
 # Switch to a Branch
 # Move to an existing branch.
 ```bash
 git checkout <branch-name>  # Older method
 git switch <branch-name>    # Newer method
-```bash
+```
 
 # Create and Switch to a New Branch
 # Create a new branch and switch to it immediately.
 ```bash
 git checkout -b <branch-name>  # Older method
 git switch -c <branch-name>    # Newer method
-```bash
+```
 
 # Delete Branch
 # Delete a branch locally (safe deletion; will fail if unmerged changes exist).
 ```bash
 git branch -d <branch-name>
-```bash
+```
 # Force Delete Branch
 # Delete a branch regardless of unmerged changes.
 ```bash
 git branch -D <branch-name>
-```bash
+```
 
 ### Merging:
 ```bash 
@@ -143,59 +157,43 @@ git revert <commit-hash>
 					 ssh -T git@github.com
 					```
 				- Now add the Private key to the SSH Agent:
-				```bash
-				eval "$(shh-agent-s)"
-				## add ssh key to agent
-				ssh -add [path-to-private-key]
-				
-				
-```
-				- Once done we can use the SSH URL of the Repo from GitHub and  Clone it Locally.
-				![[Pasted image 20250124214000.png]]
+				    ```bash
+				    eval "$(shh-agent-s)"
+				    ## add ssh key to agent
+				    ssh -add [path-to-private-key]
+			    	```
 ## Git Repository: 
 
 - ## Check the Version of Git Running:
 	```bash
 	git --version
 	```
-
-- ## Identity:  
-
-	-It is Good to add the username and email id  ,because every git commit uses this information.
-	Also set the local default  branch to mail.
-	```bash
-	git config --global user.name "Omkar"
-	git config --global user.email "omkar1709k@gmail.com"
-	git config --global init.defaultBranch main
-```
-
-	
-	- ## Creating git repo and using it
-		- We  have created a Repository in GitHub using homepage name of repo is  git_test
-		-  Clone the URL using SSH.
+- ## Creating git repo and using it
+	- We  have created a Repository in GitHub using homepage name of repo is  git_test
+	-  Clone the URL using SSH.
 		``` bash
 		git clone git@github.com:Omkar1709k/git_basics.git
 		```
-		- ## GIT Workflow
-			- We will create a new file hello_word.txt using command 
-				```bash
+	- ### GIT Workflow
+		- We will create a new file hello_word.txt using command 
+			```bash
 				touch hello_world.txt
-				```
-			 -To view the status and changes use:
-				```bash
-				git status
-				```
+			```
+		  -To view the status and changes use:
+			```bash
+				    git status
+			```
 				
-				- Now add the files to the staging area
-					```bash
+			 Now add the files to the staging area
+			```bash
 					git add hello_world.txt
-					```
-					- Now we commit the changes and typing git status should show "nothing to commit"
-				```bash
-				git commit -m "Add hello_world.txt"
-				git status
-                                ```
-			- Type  ```git log ``` to get the  details of the author who made the commit and date and time when commit was made.
+			```
+		- Now we commit the changes and typing git status should show "nothing to commit"
+			```bash
+			git commit -m "Add hello_world.txt"
+			git status
+            ```
+		- Type  ```git log ``` to get the  details of the author who made the commit and date and time when commit was made.
 	- ## Push your work to GitHub
 		```bash
 		git push 

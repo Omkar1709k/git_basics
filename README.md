@@ -129,7 +129,7 @@ git revert <commit-hash>
 		- ## Generate SSH key pair
 			```bash
 			ssh -keygen -t ed25519 -C "[info]"
-```
+			```
 			- ## Add the Key to GitHub:
 				-  After generating the key pair, add the public key to the service you want to connect over the SSH 
 				- **SSH and GPG keys** section and select the **New SSH** **key** button use this section in GitHub to add the keys.
@@ -137,7 +137,7 @@ git revert <commit-hash>
 					 ```bash
 					 ssh -T git@github.com
 					```
-				-  Now add the Private key to the SSH Agent:
+				- Now add the Private key to the SSH Agent:
 				```bash
 				eval "$(shh-agent-s)"
 				## add ssh key to agent
@@ -146,7 +146,7 @@ git revert <commit-hash>
 				
 ```
 				- Once done we can use the SSH URL of the Repo from GitHub and  Clone it Locally.
-				
+				![[Pasted image 20250124214000.png]]
 ## Git Repository: 
 
 - ## Check the Version of Git Running:
@@ -176,10 +176,11 @@ git revert <commit-hash>
 				```bash
 				touch hello_world.txt
 ```
-			 - To view the status and changes use:
-				 ```bash
-				 git status
+			 -To view the status and changes use:
+		```bash
+				git status
 ```
+				
 				- Now add the files to the staging area
 					```bash
 					git add hello_world.txt

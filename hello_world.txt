@@ -1,0 +1,32 @@
+# Git Basics
+
+## Introduction
+Git is a distributed version control system that allows multiple people to work on a project simultaneously without interfering with each other's changes. It helps track changes, revert to previous stages, and collaborate efficiently.
+
+## Key Concepts
+
+### Repository
+A repository (or repo) is a directory that contains your project files and the entire history of their changes.
+
+### Commit
+A commit is a snapshot of your repository at a specific point in time. Each commit has a unique ID and includes a message describing the changes.
+
+### Branch
+A branch is a separate line of development. The default branch in Git is called `main` (or `master` in older versions).
+
+### Merge
+Merging is the process of integrating changes from one branch into another.
+
+### Clone
+Cloning is the process of creating a copy of an existing repository.
+
+### Pull
+Pulling is the process of fetching changes from a remote repository and merging them into your local repository.
+
+### Push
+Pushing is the process of sending your local changes to a remote repository.
+
+## Basic Commands
+
+### git init
+Initializes a new Git repository.

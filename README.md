@@ -41,36 +41,41 @@ git commit -m "Commit message"
 # Display the history of commits in the current branch.
 git log
 ###
-```
-``
+
 
 # List Branches
 
 # Show all branches in the repository.
-```bash
 # Create New Branch
 # Create a new branch without switching to it.
+```bash
 git branch <branch-name>
+```bash
 
 # Switch to a Branch
 # Move to an existing branch.
+```bash
 git checkout <branch-name>  # Older method
 git switch <branch-name>    # Newer method
+```bash
 
 # Create and Switch to a New Branch
 # Create a new branch and switch to it immediately.
+```bash
 git checkout -b <branch-name>  # Older method
 git switch -c <branch-name>    # Newer method
+```bash
 
 # Delete Branch
 # Delete a branch locally (safe deletion; will fail if unmerged changes exist).
+```bash
 git branch -d <branch-name>
-
+```bash
 # Force Delete Branch
 # Delete a branch regardless of unmerged changes.
+```bash
 git branch -D <branch-name>
-###
-```
+```bash
 
 ### Merging:
 ```bash 
@@ -175,26 +180,26 @@ git revert <commit-hash>
 			- We will create a new file hello_word.txt using command 
 				```bash
 				touch hello_world.txt
-```
+				```
 			 -To view the status and changes use:
-		```bash
+				```bash
 				git status
-```
+				```
 				
 				- Now add the files to the staging area
 					```bash
 					git add hello_world.txt
-```
+					```
 					- Now we commit the changes and typing git status should show "nothing to commit"
 				```bash
 				git commit -m "Add hello_world.txt"
 				git status
-```
+                                ```
 			- Type  ```git log ``` to get the  details of the author who made the commit and date and time when commit was made.
 	- ## Push your work to GitHub
 		```bash
 		git push 
 		## or more specific 
 		git push origin main
-```
+		```
 
